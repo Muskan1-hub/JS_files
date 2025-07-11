@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Float Layout Example</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .image {
+            float: left;
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .image img {
+            width: 80%;
+            height: auto;
+        }
+
+        .text {
+            /* No need to float the text, it will wrap around the image */
+            background-color: rgb(20, 138, 138);
+        }
+
+        .footer {
+            clear: both;
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="hdc.webp">                                             
+        </div>
+        <div class="text">
+            <p>My name is Muskan Singh Rajput.I study BIM in Himalayan Darshan College.</p>
+            <p>Himalaya darshan college is well known college for IT and Management.</p>
+        </div>
+        <div class="footer">
+            &copy; 2025 HDC Website
+        </div>
+    </div>
+    <!-- <span style="background-color: aqua;">My name is Muskan Singh Rajput.I study BIM in Himalayan Darshan College.<br>
+        Himalaya darshan college is well known college for IT and Management.</span> -->
+</body>
+</html>

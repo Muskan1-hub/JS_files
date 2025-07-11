@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover and Click Example</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #myDiv:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">Hello World!</div>
+    <button id="changeTextBtn">Change Text</button>
+
+    <script>
+        document.getElementById('changeTextBtn').addEventListener('click', function() {
+        document.getElementById('myDiv').innerText = 'Muskan Rajput';
+        });
+    </script>
+</body>
+</html>

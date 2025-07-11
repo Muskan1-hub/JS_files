@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Section Example</title>
+    <style>
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            flex: 1 1 calc(33.33% - 20px);
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-member h2 {
+            margin-top: 0;
+        }
+
+        .team-member button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .team-member button:hover {
+            background-color: #3e8e41;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="team-container">
+        <div class="team-member">
+            <h2>Muskan Singh</h2>
+            <p>Muskan singh is a good collaborator in our Company.</p>
+            <button onclick="logName('Muskan Singh')">Learn More</button>
+        </div>
+        <div class="team-member">
+            <h2>Neetu Das</h2>
+            <p>Neetu Das is good influencer.She is a very polite speaker.</p>
+            <button onclick="logName('Neetu Das')">Learn More</button>
+        </div>
+        <div class="team-member">
+            <h2>Diksha Singh</h2>
+            <p>Diksha is a best leader till now in our company.She leads in a proper way.</p>
+            <button onclick="logName('Diksha Singh')">Learn More</button>
+        </div>
+    </div>
+
+    <script>
+        function logName(name) {
+            console.log(name);
+        }
+    </script>
+</body>
+</html>
